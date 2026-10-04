@@ -18,6 +18,7 @@ directly on GitHub Pages.
 └── assets/
     ├── favicon.svg   # tab icon (EM monogram)
     ├── ewa.jpg       # (optional) profile photo — auto-used if added
+    ├── email_address.jpg       # harvesting protection
     └── README.md
 ```
 
