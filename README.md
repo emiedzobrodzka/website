@@ -33,7 +33,11 @@ Everything is human-readable HTML in `index.html`:
 - **Add a publication** — copy a `<li class="pub" data-tags="...">` block inside the right
   year group. Tags (`games`, `social`, `neuro`) power the filter buttons.
 - **Update citation metrics** — edit the numbers in the `.metrics` section.
-- **Add your photo** — drop a square `assets/ewa.jpg`; it replaces the monogram automatically.
+- **Add your photo** — drop a portrait 4:5 `assets/ewa.jpg` (~640×800px); it replaces the
+  monogram automatically.
+- **Change the email address** — it is displayed as an image (`assets/email-light.png` and
+  `email-dark.png`) so crawlers cannot harvest it. Regenerate both pictures and update the
+  address parts in `emailAddress()` in `script.js`.
 - **Add a CV PDF** — drop `cv.pdf` in the root; the CV button already links to it.
 
 ## Local preview
@@ -66,4 +70,3 @@ Then visit http://localhost:8000.
 Profile information drawn from Ewa Międzobrodzka's public
 [Google Scholar](https://scholar.google.com/citations?user=sHoPy6AAAAAJ&hl=en) and
 [Utrecht University](https://www.uu.nl/staff/EJMiedzobrodzka) profiles.
-# website

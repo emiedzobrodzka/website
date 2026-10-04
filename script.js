@@ -106,6 +106,34 @@
     });
   });
 
+  /* ---------- Copy email address ----------
+     The address is shown on the page as an image and is assembled here from
+     parts, so it never appears as readable text in the HTML source.          */
+  var copyBtn = document.getElementById("copy-email");
+
+  function emailAddress() {
+    var user = ["e", "miedzo", "brodzka"].join("");
+    var host = ["gmail", "com"].join(".");
+    return user + String.fromCharCode(64) + host;
+  }
+
+  if (copyBtn) {
+    copyBtn.addEventListener("click", function () {
+      var address = emailAddress();
+      var done = function () {
+        var original = copyBtn.textContent;
+        copyBtn.textContent = copyBtn.getAttribute("data-copied") || "Copied";
+        setTimeout(function () { copyBtn.textContent = original; }, 2200);
+      };
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(address).then(done, function () { window.prompt("Copy the address:", address); });
+      } else {
+        window.prompt("Copy the address:", address);
+      }
+    });
+  }
+
   /* ---------- Footer year ---------- */
   var yearEl = document.getElementById("year");
   if (yearEl) yearEl.textContent = new Date().getFullYear();
