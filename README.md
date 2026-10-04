@@ -1,7 +1,7 @@
 # Ewa Międzobrodzka — Personal Academic Website
 
 A fast, self-contained personal website for **Ewa Międzobrodzka, PhD** — postdoctoral
-researcher in media psychology and social neuroscience at Utrecht University.
+researcher in media psychology and social neuroscience.
 
 Built as plain HTML/CSS/JS with **no build step and no dependencies**, so it can be hosted
 directly on GitHub Pages.
@@ -24,7 +24,7 @@ directly on GitHub Pages.
 ## Sections
 
 Home / hero · About · Research (themes + current projects) · Publications (filterable,
-grouped by year) · Teaching & Outreach · CV · Contact.
+grouped by year) · Teaching · Outreach · CV · Contact.
 
 ## Editing content
 
@@ -67,6 +67,4 @@ Then visit http://localhost:8000.
 
 ## Credits
 
-Profile information drawn from Ewa Międzobrodzka's public
-[Google Scholar](https://scholar.google.com/citations?user=sHoPy6AAAAAJ&hl=en) and
-[Utrecht University](https://www.uu.nl/staff/EJMiedzobrodzka) profiles.
+Profile information drawn from Ewa Międzobrodzka's public [Google Scholar](https://scholar.google.com/citations?user=sHoPy6AAAAAJ&hl=en)
